@@ -5,13 +5,147 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Mahir | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+    crossorigin="anonymous">
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 </head>
 <body>
-  <h1>Just a test</h1>
+  <!-- Navbar -->
+  <div class="navbar-fixed">
+    <nav class="black">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo responsive-img"><img src="img/logo.png" alt="Logo image"></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#landing">Home</a></li>
+            <li><a href="#work">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Landing screen -->
+  <div class="section scrollspy" id="landing">
+    <h5 class="center" id="mainText">Welcome to my portfolio!</h5>
+    <h1 class="center" id="mainText" style="color: white;"><b>MAHIR</b></h1>
+    <h6 class="center" id="mainText">Full stack web developer</h6>
+  </div>
+
+  <!-- Projects -->
+
+  <div class="section scrollspy" style="background-color: #141414;" id="work">
+    <div class="container">
+      <h3 class="header text_b center">My Projects</h3>
+      <div class="row ">
+        <!-- Project 1 -->
+        <div class="col s12 m12 l4">
+          <div class="card hoverable black">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="img/project1.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator purple-text text-lighten-5">Laravel Blog
+                <i class="mdi-navigation-more-vert right"></i>
+              </span>
+              <p>
+                <a class="purple-text text-lighten-5" href="#">mahirsblog.herokuapp.com</a>
+              </p>
+            </div>
+            <div class="card-reveal  black">
+              <span class="card-title purple-text text-lighten-5">Laravel Blog
+                <i class="mdi-navigation-close right"></i>
+              </span>
+              <p>Just a basic CRUD app, done using Laravel 5.6</p>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="col s12 m12 l4">
+          <div class="card hoverable black">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="img/project1.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator purple-text text-lighten-5">Laravel Blog
+                <i class="mdi-navigation-more-vert right"></i>
+              </span>
+              <p>
+                <a class="purple-text text-lighten-5" href="#">mahirsblog.herokuapp.com</a>
+              </p>
+            </div>
+            <div class="card-reveal  black">
+              <span class="card-title purple-text text-lighten-5">Laravel Blog
+                <i class="mdi-navigation-close right"></i>
+              </span>
+              <p>Just a basic CRUD app, done using Laravel 5.6</p>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="col s12 m12 l4">
+          <div class="card hoverable black">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="img/project1.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator purple-text text-lighten-5">Laravel Blog
+                <i class="mdi-navigation-more-vert right"></i>
+              </span>
+              <p>
+                <a class="purple-text text-lighten-5" href="#">mahirsblog.herokuapp.com</a>
+              </p>
+            </div>
+            <div class="card-reveal  black">
+              <span class="card-title purple-text text-lighten-5">Laravel Blog
+                <i class="mdi-navigation-close right"></i>
+              </span>
+              <p>Just a basic CRUD app, done using Laravel 5.6</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="section scrollspy" id="contact">
+    <div class="container">
+      <div class="row center">
+        <h1 class="white-text">Ways to find me</h1>
+      </div>
+      <div class="row center">
+        <div class="col s6">
+          <a style="color: white;" class="tooltipped" href="mailto:mahir.smajilbasic@gmail.com" data-tooltip="Gmail address"><i class="far fa-envelope fa-7x"></i></a>
+        </div>
+        <div class="col s6">
+          <a style="color: white;" class="tooltipped" href="https://github.com/smahir" data-tooltip="GitHub profile"><i class="fab fa-github fa-7x"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="section page-footer black">
+    <div class="container center-align">
+      &#169; Mahir Smajilbasic 2018
+    </div>
+  </footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.parallax').parallax();
+    $('.scrollspy').scrollSpy();
+    $('.tooltipped').tooltip();
+  });
+</script>
 </body>
 </html>
