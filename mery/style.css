@@ -43,7 +43,7 @@ header {
 }
 
 body {
-    background-image: url(../img/triangles_pattern.png);
+    background-image: url(img/triangles_pattern.png);
 }
 
 .header__nav--list {
