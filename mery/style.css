@@ -172,15 +172,15 @@ body {
 
 .project-card:nth-child(1) {
     grid-area: left;
-    background-image: url(../img/projects/elektrana-madi.jpg);
+    background-image: url(img/projects/elektrana-madi.jpg);
 }
 
 .project-card:nth-child(2) {
-    background-image: url(../img/projects/elektrana-hotilj.jpg);
+    background-image: url(img/projects/elektrana-hotilj.jpg);
 }
 
 .project-card:nth-child(3) {
-    background-image: url(../img/projects/elektrana-gracanica2.jpg);
+    background-image: url(img/projects/elektrana-gracanica2.jpg);
 }
 
 
